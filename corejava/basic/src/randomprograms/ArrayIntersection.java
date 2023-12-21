@@ -18,7 +18,7 @@ public class ArrayIntersection {
 		}
 		for (int i = 0; i <= count; i++) { 
 			int m = i + 1;
-			while (m < temp) { 
+			/*while (m < temp) { 
 				if (c[i]==c[m]) {
 					break;
 				}
@@ -26,7 +26,7 @@ public class ArrayIntersection {
 			}
 			if(m==k) {
 				System.out.println(c[i]);
-			}
+			}*/
 		}
 	
 	}
