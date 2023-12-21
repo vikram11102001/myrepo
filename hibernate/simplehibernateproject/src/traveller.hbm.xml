@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+ 
+ <class name="com.demo.dto.Traveller" table="traveller">
+  <id name="travellerId" type="int" column="travellerid">
+	<generator class="native"></generator>
+  </id>
+ 
+  <property name="firstName" column="firstname" type="string"/>
+  <property name="lastName" column="lastname" type="string"/>
+  <property name="passWord" column="password" type="string"/>
+  <!-- <property name="rollNo" column="RollNo" type="string"/>
+  <property name="age" column="Age" type="int"/> -->
+ 
+ </class>
+ 
+</hibernate-mapping>
