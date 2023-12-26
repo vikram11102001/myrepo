@@ -29,3 +29,64 @@
 2023-12-26 11:08:14,348 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\work\javasamples\springmvc\sample3\src\main\resources
 2023-12-26 11:08:14,350 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-12-26 11:08:14,352 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\work\javasamples\springmvc\sample3\src\test\resources
+2023-12-26 12:10:54,633 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: sample3:sample3:0.0.1-SNAPSHOT @ C:\work\myrepo\springmvc\sample3\pom.xml.
+2023-12-26 12:10:56,415 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:10:56,419 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:10:56,421 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:10:56,423 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:10:56,438 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sample3/src
+2023-12-26 12:10:56,440 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sample3/src/test/java because it overlaps with /sample3/src
+2023-12-26 12:10:57,458 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:10:57,459 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:10:57,461 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:10:57,461 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:10:57,575 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-26 12:10:57,811 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: sample3:sample3:0.0.1-SNAPSHOT @ C:\work\myrepo\springmvc\sample3\pom.xml.
+2023-12-26 12:10:58,389 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sample3/src
+2023-12-26 12:10:58,390 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sample3/src/test/java because it overlaps with /sample3/src
+2023-12-26 12:10:58,493 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for sample3
+2023-12-26 12:10:58,506 [Worker-41: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-12-26 12:10:58,625 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:10:58,626 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:10:58,628 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:10:58,629 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:10:58,629 [Worker-39: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of sample3
+2023-12-26 12:10:58,630 [Worker-39: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for sample3
+2023-12-26 12:10:58,635 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:02,471 [Worker-44: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVCTest:SpringMVCTest:0.0.1-SNAPSHOT @ C:\work\myrepo\springmvc\sample3\pom.xml.
+2023-12-26 12:13:02,906 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:02,907 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:13:02,909 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:02,909 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:13:02,910 [Worker-44: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of sample3
+2023-12-26 12:13:02,910 [Worker-44: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for sample3
+2023-12-26 12:13:02,913 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:04,074 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:04,075 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:13:04,076 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:04,076 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:13:28,724 [Worker-45: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-26 12:13:28,962 [Worker-45: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVCTest:SpringMVCTest:0.0.1-SNAPSHOT @ C:\work\myrepo\springmvc\sample3\pom.xml.
+2023-12-26 12:13:29,340 [Worker-45: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sample3/src/main/java because it overlaps with /sample3/src
+2023-12-26 12:13:29,341 [Worker-45: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /sample3/src/test/java because it overlaps with /sample3/src
+2023-12-26 12:13:29,731 [Worker-45: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for sample3
+2023-12-26 12:13:29,739 [Worker-45: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2023-12-26 12:13:30,346 [Worker-43: Building Project sample3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:30,348 [Worker-43: Building Project sample3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:13:30,350 [Worker-43: Building Project sample3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:13:30,351 [Worker-43: Building Project sample3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:13:30,351 [Worker-43: Building Project sample3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of sample3
+2023-12-26 12:13:30,352 [Worker-43: Building Project sample3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for sample3
+2023-12-26 12:13:30,354 [Worker-43: Building Project sample3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:14:32,290 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:14:32,291 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:14:32,292 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:14:32,292 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:14:45,752 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:14:45,753 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:14:45,756 [Worker-47: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:14:45,757 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2023-12-26 12:15:31,685 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:15:31,687 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
+2023-12-26 12:15:31,689 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-12-26 12:15:31,690 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
