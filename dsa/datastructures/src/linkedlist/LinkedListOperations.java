@@ -23,7 +23,7 @@ class Node {
     }
 }
 
-class LinkedList {
+/*class LinkedList {
     Node headNode = null;
 
     public LinkedList() {
@@ -60,7 +60,7 @@ class LinkedList {
         }
         System.out.println();
     }
-}
+}*/
 
 public class LinkedListOperations {
     public static void main(String[] args) {

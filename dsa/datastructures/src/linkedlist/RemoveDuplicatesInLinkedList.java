@@ -1,6 +1,6 @@
 package linkedlist;
 
-class Node {
+/*class Node {
 
 	private String name;
 	private Node nextNode;
@@ -37,7 +37,7 @@ class Node {
 	
 	
 	
-}
+}*/
 
 class LinkedList {
     Node headNode;
