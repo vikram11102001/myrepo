@@ -98,3 +98,4 @@
 2023-12-26 12:22:11,988 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\main\resources
 2023-12-26 12:22:11,990 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-12-26 12:22:11,992 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\work\myrepo\springmvc\sample3\src\test\resources
+2024-01-12 11:27:37,074 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
