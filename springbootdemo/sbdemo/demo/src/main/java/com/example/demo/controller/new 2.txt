@@ -1,0 +1,87 @@
+https://docs.spring.io/spring-framework/reference/index.html
+
+https://docs.spring.io/spring-framework/reference/core.html
+https://docs.spring.io/spring-framework/reference/web/webmvc.html
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/
+https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using
+https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features
+
+BeanFactory -  interface 
+ApplicationContext - sub-interface of BeanFactory
+container - gets its instructions by reading configuration metadata.
+configuration metadata - represented in XML, Java annotations, or Java code.
+dependency injection
+Autowiring - can significantly reduce the need to specify properties or constructor arguments. 
+Data binding - useful for letting user input be dynamically bound to the domain model of an application (or whatever objects you use to process user input).
+Validator and the DataBinder  - make up the validation package
+DispatcherServlet 
+DeferredResult and Callable return values in controller methods provide basic support for a single asynchronous return value.
+interception
+@ComponentScan
+@ConfigurationPropertiesScan
+@EntityScan
+@SpringBootApplication
+@Configuration 
+@Import 
+Auto-configuration
+banner.txt
+spring.banner.location
+spring.banner.charset
+CommandLineRunner
+ApplicationRunner
+@PostConstruct
+ApplicationStartingEvent
+ApplicationEnvironmentPreparedEvent
+ApplicationContextInitializedEvent
+ApplicationPreparedEvent
+ApplicationStartedEvent
+AvailabilityChangeEvent
+ApplicationReadyEvent
+ApplicationFailedEvent
+WebServerInitializedEvent
+ServletWebServerInitializedEvent
+AnnotationConfigServletWebServerApplicationContext
+AnnotationConfigApplicationContext
+setApplicationContextFactory
+setWebApplicationType
+SpringApplication.run
+CommandLinePropertySource
+@PreDestroy
+SpringApplication.exit()
+System.exit()
+BufferingApplicationStartup
+@Value
+System.getProperties()
+@DynamicPropertySource 
+@TestPropertySource
+spring.application.json
+spring.config.location 
+spring.config.name
+ConfigDataLocationNotFoundException
+SpringApplication.setDefaultProperties
+configtree: 
+Property Placeholders - ${name:default} 
+YAML is a superset of JSON
+application.yaml 
+spring.config.activate.*
+YamlPropertiesFactoryBean 
+YamlMapFactoryBean 
+YamlPropertySourceLoader 
+logging.exception-conversion-word
+logging.file.name
+logging.file.path
+logging.pattern.console
+logging.pattern.dateformat
+logging.charset.console
+logging.threshold.console
+logging.pattern.file
+logging.charset.file
+logging.threshold.file
+logging.pattern.level
+PID - process ID
+JsonSerializer  
+JsonDeserializer 
+KeyDeserializer 
+
+write a spring standalone application no need for tomcat and spring boot
