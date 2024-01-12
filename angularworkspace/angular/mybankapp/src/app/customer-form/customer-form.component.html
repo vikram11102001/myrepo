@@ -1,0 +1,74 @@
+<div>    
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <div>
+            <label for="customerID">
+            Customer ID
+          </label>
+          <input id="customerID" type="text" [(ngModel)]="customer.customerID" name="customerID">
+
+        </div>
+      
+        <div>
+          <label for="firstName">
+            First Name
+          </label>
+          <input id="firstName" type="text" [(ngModel)]="customer.firstName" name="firstName">
+
+        </div>
+      
+        <div>
+          <label for="lastName">
+            Last Name
+          </label>
+          <input id="lastName" type="text" [(ngModel)]="customer.lastName" name="lastName">
+        </div>
+      
+        <div>
+          <label for="address">
+            Address
+          </label>
+          <input id="address" type="text" [(ngModel)]="customer.address" name="address">
+        </div>
+      
+        <div>
+          <label for="mobileNo">
+            Mobile No
+          </label>
+          <input id="mobileNo" type="text" [(ngModel)]="customer.mobileNo" name="mobileNo">
+        </div>
+      
+        <div>
+          <label for="cityName">
+            City
+          </label>
+          <input id="cityName" type="text" [(ngModel)]="customer.cityName" name="cityName">
+        </div>
+      
+        <div>
+          <label for="stateName">
+            State
+          </label>
+          <input id="stateName" type="text" [(ngModel)]="customer.stateName" name="stateName">
+        </div>
+      
+        <div>
+          <label for="pinCode">
+            Pincode
+          </label>
+          <input id="pinCode" type="text" [(ngModel)]="customer.pinCode" name="pinCode">
+        </div>
+      
+        <div>
+          <label for="emailID">
+            Email ID
+          </label>
+          <input id="emailID" type="text" [(ngModel)]="customer.emailID" name="emailID">
+      
+        </div>
+        <button class="button" type="submit">Submit</button>
+    </form>
+</div>
+
+
+
+  
