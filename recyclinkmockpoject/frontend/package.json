@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "expo": "^51.0.14",
+    "react": "18.2.0",
+    "react-native": "0.74.2"
+  },
+  "name": "frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  }
+}

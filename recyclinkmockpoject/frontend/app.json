@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "ae28805a-60a7-4e8a-bfa1-3e892b2f0d16"
+      }
+    },
+    "android": {
+      "package": "com.vikram1110.frontend"
+    }
+  }
+}
