@@ -1,24 +1,56 @@
-// cd recyclink-nodejs
-// node nodejsmysqlconnection.js
-
+require('dotenv').config()
 const express = require("express");
+//const aws = require("aws-sdk");
+const { S3Client } = require("@aws-sdk/client-s3");
+const multerS3 = require('multer-s3');
+
+const multer = require("multer");
+const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const db = require("./db");
+const db = require("./db"); // Make sure this file has the local MySQL configuration
 
 const app = express();
-const port = 3001; //backend running
+const port = 3001; // backend running
 
-app.use(
-  cors({
-    origin: "*", // Change this to the React app's port front end
-  })
-);
-// Middleware to parse JSON bodies
+app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 
+// Configure AWS SDK
+const s3Client = new S3Client({
+  region: process.env.AWS_REGION,
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  },
+});
+
+//const s3 = new aws.S3();
+
+// Configure multer to use S3 for storage
+const upload = multer({
+  storage: multerS3({
+    s3: s3Client,
+    bucket: process.env.AWS_BUCKET_NAME,
+    metadata: function (req, file, cb) {
+      cb(null, { fieldName: file.fieldname });
+    },
+    key: function (req, file, cb) {
+      cb(null, Date.now().toString() + path.extname(file.originalname));
+    },
+  }),
+});
+
+// Route to handle file upload
+app.post("/upload", upload.single("image"), (req, res) => {
+  if (req.file) {
+    res.json({ imageUrl: req.file.location });
+  } else {
+    res.status(400).json({ error: "No file uploaded" });
+  }
+});
+
 // Route to handle POST requests to insert data into the database
-//construction company listing
 app.post("/addlisting", async (req, res) => {
   const { productname, quantity } = req.body;
 
@@ -28,7 +60,7 @@ app.post("/addlisting", async (req, res) => {
 
   try {
     const [result] = await db.execute(
-      "INSERT INTO listing (productname, quantity) VALUES (?, ?)", //query
+      "INSERT INTO listing (productname, quantity) VALUES (?, ?)",
       [productname, quantity]
     );
     res.status(201).send(`Listing added with ID: ${result.insertId}`);
@@ -37,13 +69,11 @@ app.post("/addlisting", async (req, res) => {
     res.status(500).send("Error inserting data into database");
   }
 });
-//admin approval function
-//show the product waiting for approval
+
+// Route to get unapproved listings
 app.get("/unapprove", async (req, res) => {
   try {
-    const [results] = await db.query(
-      "SELECT * FROM recyclinkmock.listing WHERE approved = 0"
-    );
+    const [results] = await db.query("SELECT * FROM listing WHERE approved = 0");
     res.send(results);
   } catch (error) {
     console.error("Error fetching unapproved listings:", error);
@@ -51,16 +81,12 @@ app.get("/unapprove", async (req, res) => {
   }
 });
 
-// to approve the listing
-//admin function
+// Route to approve a listing
 app.put("/approve/:id", async (req, res) => {
   const { id } = req.params;
 
   try {
-    const [result] = await db.execute(
-      "UPDATE listing SET approved = 1 WHERE listid = ?",
-      [id]
-    );
+    const [result] = await db.execute("UPDATE listing SET approved = 1 WHERE listingid = ?", [id]);
     res.sendStatus(200);
   } catch (error) {
     console.error("Error approving listing:", error);
@@ -68,32 +94,26 @@ app.put("/approve/:id", async (req, res) => {
   }
 });
 
-// to reject a listing (delete it)
-//admin function
+// Route to reject (delete) a listing
 app.delete("/reject/:id", async (req, res) => {
   const { id } = req.params;
   try {
-    const [result] = await db.execute("DELETE FROM listing WHERE listid = ?", [
-      id,
-    ]);
+    const [result] = await db.execute("DELETE FROM listing WHERE listingid = ?", [id]);
     res.sendStatus(200);
   } catch (error) {
-    console.error("Error approving listing:", error);
-    res.status(500).send("Error approving listing");
+    console.error("Error rejecting listing:", error);
+    res.status(500).send("Error rejecting listing");
   }
 });
 
-//react-native app
-//customer
+// Route to get approved listings
 app.get("/listings", async (req, res) => {
   try {
-    const [results] = await db.query(
-      "SELECT * FROM recyclinkmock.listing where approved = 1"
-    );
+    const [results] = await db.query("SELECT * FROM listing WHERE approved = 1");
     res.send(results);
   } catch (error) {
-    console.error("Error fetching unapproved listings:", error);
-    res.status(500).send("Error fetching unapproved listings");
+    console.error("Error fetching listings:", error);
+    res.status(500).send("Error fetching listings");
   }
 });
 

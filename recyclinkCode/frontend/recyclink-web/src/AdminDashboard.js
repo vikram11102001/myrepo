@@ -126,10 +126,10 @@ const AdminDashboard = () => {
                 <Td>{listing.productname}</Td>
                 <Td>{listing.quantity}</Td>
                 <Td>
-                  <Button approve onClick={() => handleApprove(listing.listid)}>
+                  <Button approve onClick={() => handleApprove(listing.listingid)}>
                     Approve
                   </Button>
-                  <Button onClick={() => handleReject(listing.listid)}>
+                  <Button onClick={() => handleReject(listing.listingid)}>
                     Reject
                   </Button>
                 </Td>

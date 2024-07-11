@@ -1,8 +1,6 @@
-// //npm start
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -28,7 +26,7 @@ const Form = styled.form`
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Set a fixed width for the form */
+  width: 400px;
 `;
 
 const FormControl = styled.div`
@@ -75,23 +73,12 @@ const AdminButton = styled(Button)`
 const Register = () => {
   const [productname, setProductName] = useState("");
   const [quantity, setQuantity] = useState("");
-
-  const handleSubmit = async (e) => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      const response = await axios.post("http://localhost:3001/addlisting", {
-        productname,
-        quantity,
-      });
-
-      alert(response.data);
-      setProductName("");
-      setQuantity("");
-    } catch (error) {
-      console.error("There was an error!", error);
-      alert("There was an error adding the listing!");
-    }
+    
+    // Assuming validation passed, navigate to UploadImage page
+    navigate(`/upload/${productname}/${quantity}`);
   };
 
   return (
@@ -104,6 +91,7 @@ const Register = () => {
             type="text"
             value={productname}
             onChange={(e) => setProductName(e.target.value)}
+            required
           />
         </FormControl>
         <FormControl>
@@ -112,13 +100,12 @@ const Register = () => {
             type="number"
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
+            required
           />
         </FormControl>
         <Button type="submit">Submit</Button>
+        <AdminButton>Go to Admin Dashboard</AdminButton>
       </Form>
-      <Link to="/admin">
-        <AdminButton>Admin Dashboard</AdminButton>
-      </Link>
     </Container>
   );
 };
