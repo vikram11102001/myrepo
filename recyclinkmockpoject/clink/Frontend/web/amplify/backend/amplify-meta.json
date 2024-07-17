@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-recyclinkreact-dev-41c11-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267434780:role/amplify-recyclinkreact-dev-41c11-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267434780:role/amplify-recyclinkreact-dev-41c11-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-recyclinkreact-dev-41c11-deployment",
+      "UnauthRoleName": "amplify-recyclinkreact-dev-41c11-unauthRole",
+      "StackName": "amplify-recyclinkreact-dev-41c11",
+      "StackId": "arn:aws:cloudformation:us-east-1:533267434780:stack/amplify-recyclinkreact-dev-41c11/7946b100-3487-11ef-bb65-0affd7d5fcaf",
+      "AmplifyAppId": "d2fwijnxpsg70k"
+    }
+  },
+  "auth": {
+    "recyclinkreactb8d626cf": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-recyclinkreact-dev-41c11-deployment/amplify-cfn-templates/auth/recyclinkreactb8d626cf-cloudformation-template.json",
+        "logicalId": "authrecyclinkreactb8d626cf"
+      },
+      "lastPushTimeStamp": "2024-06-27T13:24:11.656Z",
+      "output": {
+        "UserPoolId": "us-east-1_YkEUYaXca",
+        "AppClientIDWeb": "5hpm6vshcl6od6p24nt2k7pgtv",
+        "AppClientID": "gjb338jnlfri0gkhugvh9lblm",
+        "IdentityPoolId": "us-east-1:bc7595cc-f8c1-423d-bc10-b2b318d6910e",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:533267434780:userpool/us-east-1_YkEUYaXca",
+        "IdentityPoolName": "recyclinkreactb8d626cf_identitypool_b8d626cf__dev",
+        "UserPoolName": "recyclinkreactb8d626cf_userpool_b8d626cf"
+      },
+      "lastPushDirHash": "6QVtGrajv7F4gc37LoibW/l1bx4="
+    }
+  }
+}

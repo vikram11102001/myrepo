@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-recyclinkreact-dev-41c11-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267434780:role/amplify-recyclinkreact-dev-41c11-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267434780:role/amplify-recyclinkreact-dev-41c11-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-recyclinkreact-dev-41c11-deployment",
+      "UnauthRoleName": "amplify-recyclinkreact-dev-41c11-unauthRole",
+      "StackName": "amplify-recyclinkreact-dev-41c11",
+      "StackId": "arn:aws:cloudformation:us-east-1:533267434780:stack/amplify-recyclinkreact-dev-41c11/7946b100-3487-11ef-bb65-0affd7d5fcaf",
+      "AmplifyAppId": "d2fwijnxpsg70k"
+    },
+    "categories": {
+      "auth": {
+        "recyclinkreactb8d626cf": {}
+      }
+    }
+  }
+}
